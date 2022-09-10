@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(galaxy1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+h1{
+    margin-top: 100px;
+}
+h1,h2{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    font-family: "poppins", sans-serif;
+}
+.gombok{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.btn{
+    background: none;
+    border: 3px solid black;
+    font-family: "poppins", sans-serif;
+    padding: 20px 35px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #fff;
+    
+
+}
+.btn:hover{
+    color: #fff
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top:0;
+   width: 100%;
+   height: 100%;
+   background: rgba(116, 2, 161, 0.692);
+   border-radius: 40px;
+   z-index: -1;
+   transition: transform 0.7s;
+   transform-origin: 0 0;
+   transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+
+}
+.btn::before{
+    transform: scaleX(0);
+}
+.btn:hover::before{
+    transform: scaleX(1);
+}
