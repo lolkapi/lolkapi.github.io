@@ -38,6 +38,7 @@ h2,h1{
     border-radius:  50px;
     font-size: 20px;
     color: #fff;
+    box-shadow: 1px 1px 10px black;
     
 
 }
