@@ -1,0 +1,39 @@
+<body>
+
+</body>
+<script>
+    o = "X"
+    function f(e){
+        o = o == "X" ? "O" : "X"
+        e.target.innerHTML = o
+    }
+
+    document.write(`<table>
+        ${Array(2).fill(`<tr>
+            ${Array(2).fill(
+                `<td onclick="f(event)"></td>`
+            ).join("")}
+            </tr>`).join("")}
+        </table>`)
+</script>
+<style>
+    table{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    td{
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 6px;
+        box-shadow: 1px 1px 3px black;
+}
+td:hover{
+    background-color: brown;
+}
+td:empty{
+    background-color: azure;
+}
+</style>
