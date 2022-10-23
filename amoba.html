@@ -1,45 +1,16 @@
+<!DOCTYPE html>
+<html lang="hu">
 <head>
-    <link rel="shortcut icon" href="logo1.png">
+    <meta charset="UTF-8">
+    <title>Amőba</title>
+    <link rel="stylesheet" href="amoba.css">
     <link rel="stylesheet" href="skin.css" media="screen" type="text/css">
+    <link rel="shortcut icon" href="logo1.png">
 </head>
 <body>
-    <div class="gombok">
-        <button class="btn" onclick="location.href='https://lolkapi.github.io/';" type="button">vissza</button>
-    </div>
+    <h1>Amőba</h1>
+    <div id="t"></div>
 </body>
-<script>
-    o = "X"
-    function f(e){
-        o = o == "X" ? "O" : "X"
-        e.target.innerHTML = o
-    }
-
-    document.write(`<table>
-        ${Array(10).fill(`<tr>
-            ${Array(10).fill(
-                `<td onclick="f(event)"></td>`
-            ).join("")}
-            </tr>`).join("")}
-        </table>`)
-</script>
-<style>
-    table{
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    td{
-        width: 30px;
-        height: 30px;
-        background-color: aqua;
-        border-radius: 6px;
-        box-shadow: 1px 1px 3px black;
-}
-td:hover{
-    background-color: brown;
-}
-td:empty{
-    background-color: azure;
-}
-</style>
+<script src="amoba.js" type="text/javascript"></script>
+<button class="btn" onclick="location.href='https://lolkapi.github.io';" type="button">Vissza</button>
+</html>
