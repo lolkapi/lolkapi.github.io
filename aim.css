@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    max-width: 100;
+    max-height: 100px;
+}
+#xd{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    transition: 1s;
+}
+.black{
+    background-color: rgb(20, 20, 20);
+    transition: 1s;
+}
+#kapdbe{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background: linear-gradient(90deg, rgb(1,1,1), rgb(255, 255, 255));
+    transition: 0.1s;
+    margin: 1px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    min-height: 25px;
+    min-width: 25px;
+    border: 3px solid black;
+}
+#sotet{
+    position:absolute ;
+    top: 2%;
+    left: 5%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: darkslategray;
+    padding: 10px;
+    color: whitesmoke;
+}
+h1,h2{
+    text-align: center;
+    margin: 0;
+    color: whitesmoke;
+}
+.szoveg{
+    background-color: darkcyan;
+}
+#szvg{
+    color: whitesmoke; 
+    top: 1%;
+    right: 10%;
+    position: absolute;
+    background-color: darkslategray;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.cim{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: darkslategray;
+    margin-left:30% ;
+    margin-right: 30%;
+}
+#jatekmezo{
+    width: 90%;
+    height: 80%;
+    border: 5px solid black;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+
+}
